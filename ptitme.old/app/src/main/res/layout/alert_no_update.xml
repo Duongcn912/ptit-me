@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_normal">
+
+    <TextView
+        android:id="@+id/title_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_update"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:textSize="@dimen/title_text_size" />
+
+
+    <TextView
+        android:id="@+id/noupdate_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_update"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:padding="@dimen/margin_normal"
+        android:text="@string/no_update_description"
+        android:textColor="@color/black" />
+
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/noupdate_description"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_centerHorizontal="true"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

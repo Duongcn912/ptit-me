@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tkb"
+            android:icon="@drawable/ic_timetable"
+            android:title="@string/nav_tkb" />
+        <item
+            android:id="@+id/nav_lichthi"
+            android:icon="@drawable/ic_lichthi"
+            android:title="@string/nav_lichthi" />
+        <item
+            android:id="@+id/nav_diem"
+            android:icon="@drawable/ic_diem"
+            android:title="@string/nav_diemthi" />
+
+        <item
+            android:id="@+id/nav_diemtichluy"
+            android:icon="@drawable/ic_graduate"
+            android:title="@string/nav_diemtichluy" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_settting"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/nav_settings" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about_us"
+                android:title="@string/nav_aboutus" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ic_loading"
+        android:background="@color/colorDimGray"
+        android:paddingTop="1dp"
+        android:stretchColumns="0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDimGray"
+            android:paddingBottom="1dp"
+            android:paddingRight="1dp">
+
+            <TextView
+                android:id="@+id/id_current_week"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_cell_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/backround_title"
+                android:gravity="center"
+                android:text="@string/monday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/backround_title"
+                android:gravity="center"
+                android:text="@string/tuesday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/backround_title"
+                android:gravity="center"
+                android:text="@string/wednesday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/backround_title"
+                android:gravity="center"
+                android:text="@string/thursday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/backround_title"
+                android:gravity="center"
+                android:text="@string/friday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/backround_title"
+                android:gravity="center"
+                android:text="@string/saturday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/backround_title"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/sunday"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/colorDimGray"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/backround_title"
+                    android:gravity="center"
+                    android:text="@string/kip1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k1t2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k1t3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k1t4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k1t5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k1t6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k1t7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k1t8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/colorDimGray"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/backround_title"
+                    android:gravity="center"
+                    android:text="@string/kip2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k2t2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k2t3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k2t4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k2t5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k2t6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k2t7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k2t8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/colorDimGray"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/backround_title"
+                    android:gravity="center"
+                    android:text="@string/kip3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k3t2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k3t3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k3t4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k3t5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k3t6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k3t7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k3t8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row4"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/colorDimGray"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/backround_title"
+                    android:gravity="center"
+                    android:text="@string/kip4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k4t2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k4t3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k4t4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k4t5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k4t6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k4t7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k4t8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row5"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/colorDimGray"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/backround_title"
+                    android:gravity="center"
+                    android:text="@string/kip5"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k5t2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k5t3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k5t4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k5t5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k5t6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k5t7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k5t8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row6"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/colorDimGray"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/backround_title"
+                    android:gravity="center"
+                    android:text="@string/kip6"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k6t2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k6t3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k6t4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k6t5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k6t6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k6t7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.proptit.nghiadv.diemthiptit.view.DoubleTextView
+                    android:id="@+id/k6t8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+            </TableRow>
+        </LinearLayout>
+
+    </TableLayout>
+
+</RelativeLayout>

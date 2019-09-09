@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.proptit.nghiadv.diemthiptit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.proptit.nghiadv.diemthiptit.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.proptit.nghiadv.diemthiptit.activity.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.proptit.nghiadv.diemthiptit.activity.DiemThiActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="com.proptit.nghiadv.diemthiptit.activity.LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.proptit.nghiadv.diemthiptit.activity.TimeTableActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name="com.proptit.nghiadv.diemthiptit.activity.AboutActivity" />
+        <activity android:name="com.proptit.nghiadv.diemthiptit.activity.ScheduleTestActivity" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.proptit.nghiadv.diemthiptit.activity.NoteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="com.proptit.nghiadv.diemthiptit.activity.DiemTichLuyActivity">
+
+        </activity>
+        <activity android:name="com.proptit.nghiadv.diemthiptit.activity.LoginWithPasswordActivity" />
+        <activity android:name="com.proptit.nghiadv.diemthiptit.activity.settings.SettingsActivity">
+
+        </activity>
+        <activity android:name="com.proptit.nghiadv.diemthiptit.activity.settings.SettingStartupActivity" />
+        <activity android:name="com.proptit.nghiadv.diemthiptit.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

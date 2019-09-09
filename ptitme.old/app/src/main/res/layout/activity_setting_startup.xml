@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/toolbar_height"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_small"
+    tools:context="com.proptit.nghiadv.diemthiptit.activity.settings.SettingStartupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rb_timetable"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_item"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layoutDirection="rtl"
+                    android:text="@string/nav_tkb"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb_diemthi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_item"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layoutDirection="rtl"
+                    android:text="@string/nav_diemthi"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rb_tichluy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_item"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layoutDirection="rtl"
+                    android:text="@string/nav_diemtichluy"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_lichthi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_item"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layoutDirection="rtl"
+                    android:text="@string/nav_lichthi"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:gravity="center_horizontal|bottom">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/button_shape"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
